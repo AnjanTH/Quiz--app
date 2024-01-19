@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+   background: linear-gradient(to bottom,rgb(0, 0, 0),rgb(55, 4, 65));
+   
+    color: black;
+    display: flex;
+    gap: 20px;
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+.item{
+    display: flex;
+    width: 60%;
+    gap: 15px;
+    flex-direction: column;
+    background-color: white;
+  min-width: 30%;
+  height: 80%;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+hr{
+   height: 3px;
+   background: blue;
+}
+li{
+    list-style-type: none;
+    display: flex;
+   margin-right: 20px;
+    align-items: center;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    padding-left:20px;
+    margin-left: 0;
+    margin-bottom:15px;
+}
+button{
+    margin: auto;
+    width: 100px;
+    height: 45px;
+    background: #553f9a;
+    color: white;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+.but{
+    display: flex;
+    gap: 50px;
+}
+h2{
+    font-size: 20px;
+}
+h1{
+    font-size: 30px;
+}
+.correct{
+    background: rgb(2, 255, 120);
+    color: rgb(0, 0, 0);
+}
+.wrong{
+    background: rgb(255, 96, 96);
+}
+.res1{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.res{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:500px) {
+    li{
+        height: 40px;
+    }
+    .item{
+        min-width: 85%;
+    }
+}
